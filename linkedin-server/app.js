@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 const routes = require('./routes/index.js');
 mongoose.connect('mongodb://localhost/passport-social-auth');
 
-app.use(cors({origin: 'http:localhost:3001'}));
+app.use(cors({origin: 'http://localhost:3001'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
